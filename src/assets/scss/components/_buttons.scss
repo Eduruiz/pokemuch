@@ -1,0 +1,9 @@
+[aria-disabled='true'] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+input[aria-disabled='true'] {
+  background-color: $white-ter;
+}
+

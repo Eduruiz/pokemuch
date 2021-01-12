@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+// @import '~bulma/bulma';
+@import
+'~bulma/sass/utilities/all',
+'~bulma/sass/base/all',
+'~bulma/sass/elements/title',
+'~bulma/sass/elements/container',
+'~bulma/sass/elements/button',
+'~bulma/sass/elements/notification',
+'~bulma/sass/components/card',
+'~bulma/sass/components/level',
+'~bulma/sass/grid/columns',
+'~bulma/sass/helpers/visibility',
+'~bulma/sass/helpers/typography',
+'~bulma/sass/helpers/spacing';
+
+
+@import 'abstracts/variables';
+
+// @import 'utils/mixins';
+
+@import
+'layout/header',
+'layout/footer';
+
+@import
+'components/app',
+'components/buttons',
+'components/dialog',
+// 'components/table',
+'components/modal';

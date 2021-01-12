@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  border-top: 2px solid $white-ter;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: $color-secondary;
+}
