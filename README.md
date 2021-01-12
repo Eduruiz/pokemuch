@@ -2,6 +2,8 @@
 
 This is a simple test repository for a front-end test
 
+The project can be seen at [netlify](https://modest-lalande-8b9dd8.netlify.app/)
+
 ## Project setup
 ```
 npm install
