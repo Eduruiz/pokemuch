@@ -29,7 +29,12 @@
             </figure>
 
             <h1 class="modal__title" id="modal-details-title">
-              {{ selectedPokemon ? selectedPokemon.name : 'Select a pokémon to see details' }}
+              <template v-if="selectedPokemon">
+                {{ selectedPokemon.name }}
+              </template>
+              <template v-if="!selectedPokemon && !loadingPokemon">
+                Select a pokémon to see details
+              </template>
             </h1>
           </header>
           <main
@@ -40,16 +45,16 @@
               <li>
                 <strong>Number:</strong> {{ selectedPokemon.id }}
               </li>
-              <li>
+              <li v-if="selectedPokemon.color">
                 <strong>Color:</strong> {{ selectedPokemon.color.name }}
               </li>
-              <li>
+              <li v-if="selectedPokemon.genera">
                 <strong>Genus:</strong> {{ getGenera(selectedPokemon.genera) }}
               </li>
-              <li>
+              <li v-if="selectedPokemon.habitat">
                 <strong>Habitat:</strong> {{ selectedPokemon.habitat.name }}
               </li>
-              <li>
+              <li v-if="selectedPokemon.shape">
                 <strong>Shape:</strong> {{ selectedPokemon.shape.name }}
               </li>
             </ul>
